@@ -8,7 +8,38 @@
 </head>
 <body>
     <div id="container" class="container">
-
+        <article id="newPanel">
+            <div class="todo-modal" style="display: block;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>New Todo</h3>
+                        <div id="close" class="close">×</div>
+                    </div>
+                    <form class="modal-input">
+                        <h4>Project:</h4>
+                        <select name="todo-proj" id="todo-proj">
+                            <option value="MyToDos">MyToDos</option>                            
+                        </select>
+                        <h4>Title:</h4>
+                        <input id="title-input">
+                        <h4>Description:</h4>
+                        <input id="desc-input">
+                        <h4>Priority:</h4>
+                        <label>Low:</label>
+                        <input type="radio" id="low-prio" name="priority" value="0">
+                        <label>Med:</label>
+                        <input type="radio" id="med-prio" name="priority" value="1">
+                        <label>High:</label>
+                        <input type="radio" id="high-prio" name="priority" value="2">
+                        <h4>Notes:</h4>
+                        <textarea id="note-input"></textarea>
+                        <h4>Due:</h4>
+                        <input type="date" id="due-input">
+                    </form>
+                    <button id="todoSubmit" class="modal-button" type="submit">Create</button>
+                </div>
+            </div>
+        </article>
     </div>
     <script src="main.js"></script>
 </body>
