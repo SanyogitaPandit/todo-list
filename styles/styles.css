@@ -13,12 +13,13 @@ body {
 
 .container{
     max-width: 80%;
+    height: 100%;
     margin: 0 auto;
     box-shadow: 0 0 2px blue;
     padding: 10px;
 }
 
-.navbar {        
+.navbar {
     display: flex;
     justify-content: space-between;    
 }
@@ -40,4 +41,33 @@ ul > li {
 
 .navbar a:active, .navbar ul > li:active {    
     text-shadow: 0 0 4px rgb(39, 78, 150);
+}
+
+#main {
+    padding: 3%;
+}
+
+#newPanel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    border: 1px solid;    
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+}
+
+.close {
+    font-size: 1em;    
+}
+
+.close:hover {
+    cursor: pointer;
 }
