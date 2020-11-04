@@ -47,7 +47,7 @@ ul > li {
     padding: 3%;
 }
 
-#newPanel {
+.newPanel {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -70,4 +70,16 @@ ul > li {
 
 .close:hover {
     cursor: pointer;
+}
+
+#todoList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#todoList li {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 2px blue;    
 }
