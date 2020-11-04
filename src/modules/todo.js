@@ -1,7 +1,8 @@
 import { format, addDays } from 'date-fns';
 
-function Todo(title, description, priority, notes, due) {
+function Todo(proj, title, description, priority, notes, due) {
   this.id = Math.random().toString(36).slice(2); // Random Todo id
+  this.proj = proj;
   this.title = title; // str
   this.description = description; // str
   this.priority = priority; // 0 -low, 1 - med, 2 - high
@@ -24,7 +25,7 @@ function Todo(title, description, priority, notes, due) {
       }
       todoArr.push(this);
       localStorage.setItem("MyToDos", JSON.stringify(todoArr));
-  }
+  }  
 }
 
 export default Todo;

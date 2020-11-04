@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="container" class="container">
-        <article id="newPanel">
+        <article id="newPanel" class="newPanel">
             <div class="todo-modal" style="display: block;">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -17,8 +17,7 @@
                     </div>
                     <form class="modal-input">
                         <h4>Project:</h4>
-                        <select name="todo-proj" id="todo-proj">
-                            <option value="MyToDos">MyToDos</option>                            
+                        <select name="todo-proj" id="todo-proj">                                                      
                         </select>
                         <h4>Title:</h4>
                         <input id="title-input">
@@ -39,6 +38,15 @@
                     <button id="todoSubmit" class="modal-button" type="submit">Create</button>
                 </div>
             </div>
+        </article>
+        <article id="newProject" class="newPanel">
+            <div class="modal-header">
+                <h3>New Project</h3>
+                <div id="closep" class="close">×</div>
+            </div>
+            <h4>Title:</h4>
+            <input id="proj-title">            
+            <button id="projSubmit" class="modal-button" type="submit">Create</button>
         </article>
     </div>
     <script src="main.js"></script>
